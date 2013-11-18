@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>(in)Responsive Extension</title>
+        <link rel="stylesheet" href="%APP_CSS%">
+        <script type="text/javascript" src="%APP_JS%"></script>
+    </head>
+    <body>
+        <header>
+            <div class="close">
+                <a href="#">X</a>
+            </div>
+            <div id="size" style="min-width: 90px;"></div>
+            <div class="cssrefresh">
+                <a href="#">I</a>
+            </div>
+            <div class="reloadiframe">
+                <a href="#">I</a>
+            </div>
+            <div id="devices">
+                <a href="#" class="tablet-portrait">
+                    <span>Tablet Portrait</span>
+                </a>
+                <a href="#" class="tablet-landscape">
+                    <span>Tablet Landscape</span>
+                </a>
+                <a href="#" class="smartphone-landscape">
+                    <span>iPhone Landscape</span>
+                </a>
+                <a href="#" class="smartphone-portrait">
+                    <span>iPhone Portrait</span>
+                </a>
+                <a href="#" class="auto active">
+                    <span>Auto</span>
+                </a>
+            </div>
+        </header>
+        <section>
+            <div id="wrapper">
+                <iframe src="%URL%" onload="resbook.changeUrl(this.contentWindow.location, this.contentDocument.title);"></iframe>
+            </div>
+        </section>
+    </body>
+</html>
