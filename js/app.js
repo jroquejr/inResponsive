@@ -191,4 +191,5 @@ window.resbook = {};
     })
 })(resbook);
 
-resbook.changeUrl(this.contentWindow.location, this.contentDocument.title);
+//var ifrm = document.querySelector('#wrapper iframe');
+//resbook.changeUrl(ifrm.contentWindow.location, ifrm.contentDocument.title);
