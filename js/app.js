@@ -101,9 +101,9 @@ window.resbook = {};
         if (window.chrome || (window.getComputedStyle && !window.globalStorage && !window.opera)) {
         }
         if (w.location.protocol !== 'http:') {
-            refreshBtn.setAttribute('style', 'display:none');
+            //refreshBtn.setAttribute('style', 'display:none');
         } else {
-            reloadBtn.setAttribute('style', 'display:none');
+            //reloadBtn.setAttribute('style', 'display:none');
         }
         [].forEach.call(document.querySelectorAll('#devices a'), function(el) {
             el.addEventListener('click', function(e) {
