@@ -41,7 +41,8 @@ window.resbook = {};
         }
     }, reloadIframe = function() {
         var ifrm = d.querySelector('#wrapper iframe');
-        ifrm.src += '';
+        ifrm.contentWindow.location.reload(true);
+        //ifrm.src += '';
     }, resize = function(w, h, f) {
         w = w || wrapper.clientWidth;
         h = h || wrapper.clientHeight;
